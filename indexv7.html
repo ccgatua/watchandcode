@@ -6,12 +6,34 @@
     </head>
     
     <body>
-        <hi>Todo List</hi>
-    <!-- Case 1: There should be a "Display Todos" button and a "Toggle all" button
-        in app-->
-        <button id="displayTodosButton">Display Todos</button>
-        <button id="toggleAllButton">Toggle All</button>
-    <!-- Case 2: Clicking "Display todos" should run todoList.displayTodos. -->
+        <h1>Todo List</h1>
+        
+        <div>
+            <button onclick="handlers.displayTodos()">Display Todos</button>
+            <button onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        
+        <div>
+            <button onclick="handlers.addTodo()">Add</button>
+            <input id="addTodoTextInput" type="text">
+        </div>
+        
+        <div>
+            <button onclick="handlers.changeTodo()">Change Todo</button>
+            <input id="changeTodoPositionInput" type="number">
+            <input id="changeTodoTextInput" type="text">
+        </div>
+        
+        <div>
+            <button onclick="handlers.deleteTodo()">Delete</button>
+            <input id="deleteTodoPositionInput" type="number">
+        </div>
+        
+        <div>
+            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+            <input id="toggleCompletedPositionInput" type="number">
+        </div>
+        
         <script src="script.js"></script>
     </body>
     
